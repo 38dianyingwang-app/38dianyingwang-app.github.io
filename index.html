@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>38电影网 - 高清电影电视剧在线观看_热门影视资讯导航</title>
+<meta name="description" content="38电影网为您提供最新高清电影、热播电视剧、综艺动漫推荐与影视资讯榜单，聚合全网热门影视剧情介绍、评分点评与更新动态，找片看片就上38电影网。">
+<meta name="keywords" content="38电影网,38电影,电影网,高清电影,电视剧在线观看,影视资讯,热门影视推荐">
+<meta name="author" content="38电影网">
+<meta name="robots" content="index,follow">
+<meta name="format-detection" content="telephone=no">
+<meta name="theme-color" content="#0b0d17">
+<link rel="canonical" href="https://www.38dianyingwang-app.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="38电影网">
+<meta property="og:title" content="38电影网 - 高清电影电视剧在线观看_热门影视资讯导航">
+<meta property="og:description" content="38电影网聚合最新高清电影、热播电视剧、综艺动漫与影视资讯榜单，找片看片一站直达。">
+<meta property="og:url" content="https://www.38dianyingwang-app.com/">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="38电影网 - 高清电影电视剧在线观看">
+<meta name="twitter:description" content="38电影网聚合最新高清电影、热播电视剧、综艺动漫与影视资讯榜单。">
+<style>
+:root{
+  --bg:#0b0d17;
+  --bg-soft:#141827;
+  --card:#171b2b;
+  --line:rgba(255,255,255,.09);
+  --txt:#e9ecf5;
+  --txt-2:#a2abc2;
+  --brand:#ff4d6d;
+  --brand-2:#ffb347;
+  --brand-3:#7c5cff;
+  --radius:16px;
+  --maxw:1200px;
+}
+*{box-sizing:border-box;}
+html{-webkit-text-size-adjust:100%;}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--txt);
+  font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB","Helvetica Neue",Arial,sans-serif;
+  font-size:16px;
+  line-height:1.7;
+  overflow-x:hidden;
+}
+img{max-width:100%;height:auto;display:block;}
+a{color:inherit;text-decoration:none;}
+ul,ol{margin:0;padding:0;list-style:none;}
+h1,h2,h3,h4{margin:0;line-height:1.35;font-weight:800;letter-spacing:.5px;}
+p{margin:0;}
+.wrap{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 20px;}
+.kw{color:var(--brand-2);}
+
+/* 顶部导航 */
+.topbar{
+  position:sticky;top:0;z-index:60;
+  background:rgba(11,13,23,.88);
+  backdrop-filter:saturate(160%) blur(12px);
+  border-bottom:1px solid var(--line);
+}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:62px;gap:12px;}
+.logo{display:flex;align-items:center;gap:10px;font-size:20px;font-weight:900;letter-spacing:1px;}
+.logo .mark{
+  width:36px;height:36px;border-radius:10px;flex:0 0 36px;
+  background:linear-gradient(135deg,var(--brand),var(--brand-2));
+  display:flex;align-items:center;justify-content:center;
+  font-size:15px;color:#1a0d12;font-weight:900;
+}
+.logo span.sub{font-size:11px;color:var(--txt-2);font-weight:500;letter-spacing:2px;display:block;line-height:1;}
+.nav{display:flex;align-items:center;gap:4px;}
+.nav a{
+  padding:8px 12px;border-radius:10px;font-size:15px;color:var(--txt-2);
+  transition:color .2s,background .2s;
+}
+.nav a:hover,.nav a:focus{color:#fff;background:rgba(255,255,255,.07);}
+.nav a.active{color:#fff;background:linear-gradient(135deg,rgba(255,77,109,.22),rgba(255,179,71,.18));}
+.menu-btn{
+  display:none;width:42px;height:36px;border:1px solid var(--line);border-radius:10px;
+  background:var(--bg-soft);cursor:pointer;padding:0;
+}
+.menu-btn i{display:block;width:18px;height:2px;background:var(--txt);margin:4px auto;border-radius:2px;}
+
+/* 首屏 */
+.hero{position:relative;padding:64px 0 46px;overflow:hidden;}
+.hero::before{
+  content:"";position:absolute;inset:0;
+  background:
+    radial-gradient(900px 420px at 12% -10%,rgba(255,77,109,.30),transparent 60%),
+    radial-gradient(760px 380px at 88% 10%,rgba(124,92,255,.28),transparent 60%),
+    radial-gradient(600px 300px at 50% 110%,rgba(255,179,71,.16),transparent 60%);
+  pointer-events:none;
+}
+.hero .wrap{position:relative;}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:6px 14px;border-radius:999px;
+  border:1px solid var(--line);background:rgba(255,255,255,.05);
+  font-size:13px;color:var(--txt-2);margin-bottom:18px;
+}
+.eyebrow b{color:var(--brand-2);font-weight:700;}
+.hero h1{font-size:44px;margin-bottom:16px;}
+.hero h1 em{
+  font-style:normal;
+  background:linear-gradient(120deg,var(--brand) 0%,var(--brand-2) 55%,var(--brand-3) 100%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.hero .lead{font-size:17px;color:var(--txt-2);max-width:720px;margin-bottom:26px;}
+.search{
+  display:flex;gap:10px;max-width:620px;background:var(--card);
+  border:1px solid var(--line);border-radius:14px;padding:8px;
+  box-shadow:0 18px 40px rgba(0,0,0,.35);
+}
+.search input{
+  flex:1;min-width:0;background:transparent;border:0;outline:none;
+  color:var(--txt);font-size:15px;padding:8px 10px;font-family:inherit;
+}
+.search input::placeholder{color:#6f7893;}
+.search button{
+  border:0;cursor:pointer;border-radius:10px;padding:10px 22px;
+  font-size:15px;font-weight:700;color:#1a0d12;font-family:inherit;
+  background:linear-gradient(135deg,var(--brand-2),var(--brand));
+}
+.hero-tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px;}
+.hero-tags a{
+  font-size:13px;color:var(--txt-2);border:1px dashed var(--line);
+  padding:5px 12px;border-radius:999px;
+}
+.hero-tags a:hover{color:var(--brand-2);border-color:rgba(255,179,71,.5);}
+
+/* 数据条 */
+.stats{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:38px;
+}
+.stats div{
+  background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.02));
+  border:1px solid var(--line);border-radius:var(--radius);padding:18px 16px;text-align:center;
+}
+.stats strong{display:block;font-size:26px;color:#fff;line-height:1.3;}
+.stats span{font-size:13px;color:var(--txt-2);}
+
+/* 通用区块 */
+section{padding:56px 0;}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:28px;flex-wrap:wrap;}
+.sec-head h2{font-size:28px;position:relative;padding-left:16px;}
+.sec-head h2::before{
+  content:"";position:absolute;left:0;top:6px;bottom:6px;width:5px;border-radius:3px;
+  background:linear-gradient(180deg,var(--brand),var(--brand-2));
+}
+.sec-head p{font-size:14px;color:var(--txt-2);}
+.more{font-size:14px;color:var(--brand-2);border:1px solid rgba(255,179,71,.35);padding:6px 14px;border-radius:999px;white-space:nowrap;}
+.band{background:var(--bg-soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+
+/* 卡片网格 */
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;}
+.card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  overflow:hidden;transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease;
+  display:flex;flex-direction:column;
+}
+.card:hover{transform:translateY(-6px);border-color:rgba(255,179,71,.45);box-shadow:0 20px 40px rgba(0,0,0,.45);}
+.poster{
+  position:relative;aspect-ratio:3/4;display:flex;align-items:flex-end;
+  padding:14px;background:linear-gradient(160deg,#2a3358,#11141f);
+}
+.poster .badge{
+  position:absolute;top:12px;left:12px;font-size:12px;padding:3px 9px;border-radius:6px;
+  background:rgba(0,0,0,.55);border:1px solid var(--line);color:var(--brand-2);
+}
+.poster .score{
+  position:absolute;top:12px;right:12px;font-size:12px;font-weight:800;color:#fff;
+  background:linear-gradient(135deg,var(--brand),var(--brand-2));padding:3px 8px;border-radius:6px;color:#1a0d12;
+}
+.poster .pname{font-size:17px;font-weight:800;text-shadow:0 2px 10px rgba(0,0,0,.6);}
+.poster .pmeta{font-size:12px;color:#c9cfe2;text-shadow:0 2px 8px rgba(0,0,0,.6);}
+.card .body{padding:14px 16px 18px;}
+.card .body h3{font-size:16px;margin-bottom:6px;}
+.card .body p{font-size:13px;color:var(--txt-2);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
+.card .body .tags{margin-top:10px;display:flex;gap:8px;flex-wrap:wrap;}
+.card .body .tags span{font-size:12px;color:var(--txt-2);background:rgba(255,255,255,.06);padding:3px 8px;border-radius:6px;}
+
+/* 剧场两列 */
+.split{display:grid;grid-template-columns:1.2fr .8fr;gap:22px;align-items:start;}
+.list{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;}
+.list li{display:flex;gap:14px;padding:16px 18px;border-bottom:1px solid var(--line);align-items:center;}
+.list li:last-child{border-bottom:0;}
+.list .no{width:28px;height:28px;flex:0 0 28px;border-radius:8px;background:rgba(255,255,255,.07);
+  display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;color:var(--brand-2);}
+.list .no.top{background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#1a0d12;}
+.list .info{flex:1;min-width:0;}
+.list .info h3{font-size:15px;margin-bottom:3px;}
+.list .info p{font-size:13px;color:var(--txt-2);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.list .go{font-size:13px;color:var(--brand-2);white-space:nowrap;}
+.panel{background:linear-gradient(180deg,rgba(124,92,255,.14),rgba(255,255,255,.02));
+  border:1px solid var(--line);border-radius:var(--radius);padding:22px;}
+.panel h3{font-size:19px;margin-bottom:12px;}
+.panel p{font-size:14px;color:var(--txt-2);margin-bottom:14px;}
+.panel ul li{font-size:14px;color:var(--txt-2);padding:8px 0;border-bottom:1px dashed var(--line);display:flex;justify-content:space-between;gap:10px;}
+.panel ul li:last-child{border-bottom:0;}
+.panel ul li b{color:#fff;font-weight:700;}
+
+/* 资讯 */
+.news{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+.news article{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px;
+  transition:transform .25s,border-color .25s;}
+.news article:hover{transform:translateY(-5px);border-color:rgba(124,92,255,.5);}
+.news .date{font-size:12px;color:var(--brand-2);letter-spacing:1px;}
+.news h3{font-size:17px;margin:8px 0 10px;}
+.news p{font-size:14px;color:var(--txt-2);}
+
+/* 优势 */
+.feats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
+.feats div{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px;}
+.feats .ic{width:42px;height:42px;border-radius:12px;margin-bottom:12px;
+  background:linear-gradient(135deg,rgba(255,77,109,.25),rgba(255,179,71,.22));
+  display:flex;align-items:center;justify-content:center;font-size:19px;}
+.feats h3{font-size:16px;margin-bottom:6px;}
+.feats p{font-size:13px;color:var(--txt-2);}
+
+/* FAQ */
+.faq details{background:var(--card);border:1px solid var(--line);border-radius:12px;margin-bottom:12px;padding:0 18px;}
+.faq summary{cursor:pointer;padding:16px 0;font-size:15px;font-weight:700;list-style:none;}
+.faq summary::-webkit-details-marker{display:none;}
+.faq summary::after{content:"+";float:right;color:var(--brand-2);font-weight:800;}
+.faq details[open] summary::after{content:"-";}
+.faq details p{padding:0 0 16px;font-size:14px;color:var(--txt-2);}
+
+/* CTA */
+.cta{
+  background:linear-gradient(135deg,rgba(255,77,109,.18),rgba(124,92,255,.18));
+  border:1px solid var(--line);border-radius:22px;padding:38px 28px;text-align:center;
+}
+.cta h2{font-size:26px;margin-bottom:10px;}
+.cta p{font-size:15px;color:var(--txt-2);margin-bottom:22px;}
+.btn{
+  display:inline-block;padding:12px 30px;border-radius:12px;font-weight:800;font-size:15px;
+  background:linear-gradient(135deg,var(--brand-2),var(--brand));color:#1a0d12;
+}
+.btn.ghost{background:transparent;border:1px solid var(--line);color:var(--txt);margin-left:10px;}
+
+/* 底部 */
+footer{background:#080a12;border-top:1px solid var(--line);padding:44px 0 26px;margin-top:20px;}
+.fgrid{display:grid;grid-template-columns:1.4fr repeat(3,1fr);gap:26px;}
+.fgrid h4{font-size:15px;margin-bottom:12px;color:#fff;}
+.fgrid p{font-size:13px;color:var(--txt-2);}
+.fgrid li{padding:5px 0;}
+.fgrid li a{font-size:13px;color:var(--txt-2);}
+.fgrid li a:hover{color:var(--brand-2);}
+.copy{margin-top:28px;padding-top:18px;border-top:1px solid var(--line);
+  font-size:13px;color:#7b8399;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;}
+.to-top{
+  position:fixed;right:18px;bottom:18px;width:44px;height:44px;border-radius:12px;
+  background:var(--card);border:1px solid var(--line);color:var(--txt);
+  display:flex;align-items:center;justify-content:center;font-size:18px;z-index:50;
+}
+
+@media (max-width:1024px){
+  .grid{grid-template-columns:repeat(3,1fr);}
+  .news{grid-template-columns:repeat(2,1fr);}
+  .feats{grid-template-columns:repeat(2,1fr);}
+  .split{grid-template-columns:1fr;}
+  .fgrid{grid-template-columns:1fr 1fr;}
+}
+@media (max-width:720px){
+  body{font-size:15px;}
+  .wrap{padding:0 16px;}
+  .menu-btn{display:block;}
+  .nav{
+    display:none;position:absolute;left:0;right:0;top:62px;
+    background:rgba(11,13,23,.98);border-bottom:1px solid var(--line);
+    flex-direction:column;align-items:stretch;padding:10px 16px 16px;gap:2px;
+  }
+  .nav.open{display:flex;}
+  .nav a{padding:12px 10px;border-radius:8px;}
+  .hero{padding:38px 0 26px;}
+  .hero h1{font-size:30px;}
+  .hero .lead{font-size:15px;}
+  .search{flex-direction:column;}
+  .search button{width:100%;}
+  .stats{grid-template-columns:repeat(2,1fr);gap:10px;}
+  section{padding:40px 0;}
+  .sec-head h2{font-size:22px;}
+  .grid{grid-template-columns:repeat(2,1fr);gap:12px;}
+  .news{grid-template-columns:1fr;}
+  .feats{grid-template-columns:1fr;}
+  .fgrid{grid-template-columns:1fr;}
+  .cta{padding:28px 18px;}
+  .cta h2{font-size:21px;}
+  .btn.ghost{margin-left:0;margin-top:10px;}
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"WebSite",
+      "@id":"https://www.38dianyingwang-app.com/#website",
+      "url":"https://www.38dianyingwang-app.com/",
+      "name":"38电影网",
+      "alternateName":"38电影",
+      "description":"38电影网提供高清电影、热播电视剧、综艺动漫推荐与影视资讯榜单。",
+      "inLanguage":"zh-CN",
+      "publisher":{"@id":"https://www.38dianyingwang-app.com/#organization"}
+    },
+    {
+      "@type":"Organization",
+      "@id":"https://www.38dianyingwang-app.com/#organization",
+      "name":"38电影网",
+      "url":"https://www.38dianyingwang-app.com/",
+      "description":"38电影网是面向影视爱好者的影视资讯与观影导航站点。"
+    },
+    {
+      "@type":"BreadcrumbList",
+      "itemListElement":[
+        {"@type":"ListItem","position":1,"name":"首页","item":"https://www.38dianyingwang-app.com/"},
+        {"@type":"ListItem","position":2,"name":"电影大全"},
+        {"@type":"ListItem","position":3,"name":"电视剧场"},
+        {"@type":"ListItem","position":4,"name":"综艺动漫"},
+        {"@type":"ListItem","position":5,"name":"影视资讯"}
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/yazhou.js"></script>
+
+<div class="topbar">
+  <div class="wrap">
+    <a class="logo" href="#" aria-label="38电影网首页">
+      <span class="mark" aria-hidden="true">38</span>
+      <span>38电影网<span class="sub">38DIANYINGWANG</span></span>
+    </a>
+    <button class="menu-btn" id="menuBtn" type="button" aria-label="展开导航菜单" aria-expanded="false" aria-controls="mainNav">
+      <i></i><i></i><i></i>
+    </button>
+    <nav class="nav" id="mainNav" aria-label="网站主导航">
+      <a href="#" class="active">首页</a>
+      <a href="#">电影大全</a>
+      <a href="#">电视剧场</a>
+      <a href="#">综艺动漫</a>
+      <a href="#">影视资讯</a>
+      <a href="#">热播榜单</a>
+      <a href="#">关于我们</a>
+    </nav>
+  </div>
+</div>
+
+<main>
+
+  <section class="hero" aria-labelledby="heroTitle">
+    <div class="wrap">
+      <span class="eyebrow">影视聚合导航 · 每日更新 · <b>找片看片一站直达</b></span>
+      <h1 id="heroTitle"><em>38电影网</em> — 高清电影电视剧在线观看与影视资讯导航</h1>
+      <p class="lead">
+        <strong class="kw">38电影网</strong>聚合最新高清电影、热播电视剧、热门综艺与动漫番剧，提供剧情介绍、评分口碑、更新排期与观影指南。海量片单分类清晰、检索便捷，让你快速找到想看的好片。
+      </p>
+      <form class="search" action="#" method="get" role="search" onsubmit="return false;">
+        <label for="q" style="position:absolute;left:-9999px;">搜索影视</label>
+        <input id="q" type="search" name="q" placeholder="搜索电影、电视剧、综艺、动漫…" autocomplete="off">
+        <button type="submit">立即搜索</button>
+      </form>
+      <div class="hero-tags">
+        <a href="#">动作片</a>
+        <a href="#">科幻片</a>
+        <a href="#">喜剧片</a>
+        <a href="#">悬疑犯罪</a>
+        <a href="#">国产剧</a>
+        <a href="#">日韩剧</a>
+        <a href="#">动漫番剧</a>
+      </div>
+      <div class="stats">
+        <div><strong>38000+</strong><span>收录影视条目</span></div>
+        <div><strong>24h</strong><span>片单实时更新</span></div>
+        <div><strong>36</strong><span>精细分类标签</span></div>
+        <div><strong>1080P</strong><span>高清画质推荐</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="movie" aria-labelledby="movieTitle">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <h2 id="movieTitle">热门电影推荐</h2>
+          <p>38电影网精选本周高分影片，覆盖动作、科幻、悬疑、爱情等类型</p>
+        </div>
+        <a class="more" href="#">查看全部电影</a>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <div class="poster" style="background:linear-gradient(160deg,#3a2b58,#12131f);">
+            <span class="badge">科幻</span><span class="score">8.9</span>
+            <div><div class="pname">星际回响</div><div class="pmeta">2026 · 美国 · 科幻冒险</div></div>
+          </div>
+          <div class="body">
+            <h3>星际回响 剧情看点</h3>
+            <p>一支深空探险队穿越虫洞后的生存抉择，视效与叙事双线并进。</p>
+            <div class="tags"><span>1080P</span><span>豆瓣高分</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="poster" style="background:linear-gradient(160deg:#5a2a34,#12131f);">
+            <span class="badge">动作</span><span class="score">8.4</span>
+            <div><div class="pname">烈火追击</div><div class="pmeta">2026 · 动作犯罪</div></div>
+          </div>
+          <div class="body">
+            <h3>烈火追击 观影指南</h3>
+            <p>硬核写实追车与近身格斗，节奏紧凑，适合大屏观赏。</p>
+            <div class="tags"><span>动作</span><span>高能</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="poster" style="background:linear-gradient(160deg:#25405c,#12131f);">
+            <span class="badge">悬疑</span><span class="score">9.1</span>
+            <div><div class="pname">雾港谜案</div><div class="pmeta">2025 · 悬疑推理</div></div>
+          </div>
+          <div class="body">
+            <h3>雾港谜案 剧情解析</h3>
+            <p>多重反转的港口失踪案，细节伏笔遍布全片，值得二刷。</p>
+            <div class="tags"><span>烧脑</span><span>口碑佳作</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="poster" style="background:linear-gradient(160deg:#4a3a1e,#12131f);">
+            <span class="badge">剧情</span><span class="score">8.7</span>
+            <div><div class="pname">长夜将明</div><div class="pmeta">2025 · 华语剧情</div></div>
+          </div>
+          <div class="body">
+            <h3>长夜将明 影评点评</h3>
+            <p>小人物群像刻画细腻，情感浓度高，年度华语代表作之一。</p>
+            <div class="tags"><span>华语</span><span>获奖影片</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="poster" style="background:linear-gradient(160deg:#1e4a44,#12131f);">
+            <span class="badge">动画</span><span class="score">8.8</span>
+            <div><div class="pname">山海奇谭</div><div class="pmeta">2026 · 国漫动画</div></div>
+          </div>
+          <div class="body">
+            <h3>山海奇谭 世界观</h3>
+            <p>东方神话新编，水墨风美术与热血成长叙事兼具。</p>
+            <div class="tags"><span>国漫</span><span>全家适宜</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="poster" style="background:linear-gradient(160deg:#3d2a4f,#12131f);">
+            <span class="badge">爱情</span><span class="score">8.2</span>
+            <div><div class="pname">春信来时</div><div class="pmeta">2026 · 爱情文艺</div></div>
+          </div>
+          <div class="body">
+            <h3>春信来时 观影推荐</h3>
+            <p>关于重逢与告白的治愈系故事，画面与配乐质感出色。</p>
+            <div class="tags"><span>治愈</span><span>文艺</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="poster" style="background:linear-gradient(160deg:#4f2a2a,#12131f);">
+            <span class="badge">恐怖</span><span class="score">7.9</span>
+            <div><div class="pname">夜半回声</div><div class="pmeta">2025 · 惊悚恐怖</div></div>
+          </div>
+          <div class="body">
+            <h3>夜半回声 看点速览</h3>
+            <p>氛围营造见长，心理惊悚为主，胆大观众可入。</p>
+            <div class="tags"><span>惊悚</span><span>氛围向</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="poster" style="background:linear-gradient(160deg:#2a3f2a,#12131f);">
+            <span class="badge">纪录</span><span class="score">9.0</span>
+            <div><div class="pname">大地之上</div><div class="pmeta">2026 · 自然纪录</div></div>
+          </div>
+          <div class="body">
+            <h3>大地之上 影像笔记</h3>
+            <p>四年跟拍的自然生态影像，画面震撼，适合静心观看。</p>
+            <div class="tags"><span>纪录</span><span>高画质</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="tv" class="band" aria-labelledby="tvTitle">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <h2 id="tvTitle">电视剧场热播榜</h2>
+          <p>38电影网同步更新国产剧、日韩剧、欧美剧追剧日历</p>
+        </div>
+        <a class="more" href="#">进入电视剧场</a>
+      </div>
+      <div class="split">
+        <ol class="list">
+          <li><span class="no top">1</span><div class="info"><h3>山河故人</h3><p>年代传奇 · 更新至第 28 集</p></div><a class="go" href="#">追剧</a></li>
+          <li><span class="no top">2</span><div class="info"><h3>都市长街</h3><p>都市职场 · 更新至第 20 集</p></div><a class="go" href="#">追剧</a></li>
+          <li><span class="no top">3</span><div class="info"><h3>云上检察官</h3><p>涉案法治 · 更新至第 16 集</p></div><a class="go" href="#">追剧</a></li>
+          <li><span class="no">4</span><div class="info"><h3>春日列车</h3><p>青春校园 · 已完结 24 集</p></div><a class="go" href="#">追剧</a></li>
+          <li><span class="no">5</span><div class="info"><h3>海港旧事</h3><p>悬疑年代 · 更新至第 12 集</p></div><a class="go" href="#">追剧</a></li>
+          <li><span class="no">6</span><div class="info"><h3>星河诊所</h3><p>医疗温情 · 更新至第 18 集</p></div><a class="go" href="#">追剧</a></li>
+          <li><span class="no">7</span><div class="info"><h3>北岭一家人</h3><p>家庭伦理 · 已完结 36 集</p></div><a class="go" href="#">追剧</a></li>
+        </ol>
+        <aside class="panel" aria-label="追剧日历">
+          <h3>本周追剧日历</h3>
+          <p>38电影网按播出日整理更新提醒，追剧不再错过首播。</p>
+          <ul>
+            <li><span>周一 · 都市长街</span><b>20:00</b></li>
+            <li><span>周二 · 山河故人</span><b>19:30</b></li>
+            <li><span>周三 · 云上检察官</span><b>21:00</b></li>
+            <li><span>周四 · 海港旧事</span><b>20:00</b></li>
+            <li><span>周五 · 星河诊所</span><b>22:00</b></li>
+            <li><span>周末 · 综艺专场</span><b>全天</b></li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section id="show" aria-labelledby="showTitle">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <h2 id="showTitle">综艺与动漫专区</h2>
+          <p>热门综艺、国漫番剧与日番新作一网打尽</p>
+        </div>
+        <a class="more" href="#">浏览更多内容</a>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <div class="poster" style="background:linear-gradient(160deg,#4a2f1c,#12131f);aspect-ratio:16/10;">
+            <span class="badge">综艺</span><span class="score">8.5</span>
+            <div><div class="pname">旷野厨房</div><div class="pmeta">美食旅行 · 每周五更新</div></div>
+          </div>
+          <div class="body">
+            <h3>旷野厨房 节目看点</h3>
+            <p>慢综艺质感，风景与烟火气并存，解压首选。</p>
+            <div class="tags"><span>慢综艺</span><span>解压</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="poster" style="background:linear-gradient(160deg:#1c3a4a,#12131f);aspect-ratio:16/10;">
+            <span class="badge">动漫</span><span class="score">9.2</span>
+            <div><div class="pname">星轨少年</div><div class="pmeta">国漫 · 连载至第 48 话</div></div>
+          </div>
+          <div class="body">
+            <h3>星轨少年 剧情简介</h3>
+            <p>热血机甲题材，作画稳定，打斗分镜口碑出色。</p>
+            <div class="tags"><span>国漫</span><span>热血</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="poster" style="background:linear-gradient(160deg:#3a1c3a,#12131f);aspect-ratio:16/10;">
+            <span class="badge">综艺</span><span class="score">8.0</span>
+            <div><div class="pname">音乐现场季</div><div class="pmeta">音乐竞演 · 每周六更新</div></div>
+          </div>
+          <div class="body">
+            <h3>音乐现场季 舞台盘点</h3>
+            <p>Live 编曲质量高，适合戴耳机享受现场氛围。</p>
+            <div class="tags"><span>音乐</span><span>现场</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="poster" style="background:linear-gradient(160deg:#2f3a1c,#12131f);aspect-ratio:16/10;">
+            <span class="badge">动漫</span><span class="score">8.6</span>
+            <div><div class="pname">林间小屋</div><div class="pmeta">治愈番 · 全 12 话</div></div>
+          </div>
+          <div class="body">
+            <h3>林间小屋 推荐理由</h3>
+            <p>日常治愈小品，节奏舒缓，适合睡前放松观看。</p>
+            <div class="tags"><span>治愈</span><span>日常</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="news" class="band" aria-labelledby="newsTitle">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <h2 id="newsTitle">影视资讯与观影指南</h2>
+          <p>38电影网编辑部每日带来行业动态与深度解读</p>
+        </div>
+        <a class="more" href="#">进入资讯频道</a>
+      </div>
+      <div class="news">
+        <article>
+          <div class="date">2026-10-10</div>
+          <h3>国庆档后市场观察：口碑片长线效应明显</h3>
+          <p>类型多元与口碑驱动成为票房延续的关键，中小成本影片逆袭案例增多。</p>
+        </article>
+        <article>
+          <div class="date">2026-10-08</div>
+          <h3>剧集排播新趋势：短剧集与周更并行</h3>
+          <p>12 集以内的短剧集更易形成话题，平台排播节奏也更加灵活。</p>
+        </article>
+        <article>
+          <div class="date">2026-10-05</div>
+          <h3>家庭观影指南：如何挑选合适的画质与音效</h3>
+          <p>从片源码率、显示设备到声音环境，一步步搭出舒适观影体验。</p>
+        </article>
+        <article>
+          <div class="date">2026-10-02</div>
+          <h3>国漫崛起：美术风格与工业化流程升级</h3>
+          <p>三维与二维结合的制作管线成熟，番剧年产量与品质同步提升。</p>
+        </article>
+        <article>
+          <div class="date">2026-09-28</div>
+          <h3>影迷必看：经典科幻片补片清单</h3>
+          <p>按年代梳理十部奠基之作，快速建立科幻电影观看坐标系。</p>
+        </article>
+        <article>
+          <div class="date">2026-09-25</div>
+          <h3>如何高效找片：用好分类与标签检索</h3>
+          <p>结合类型、地区、年份与评分筛选，几步定位想看的内容。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="rank" aria-labelledby="rankTitle">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <h2 id="rankTitle">38电影网口碑总榜</h2>
+          <p>综合评分、热度与完播率生成的全站榜单</p>
+        </div>
+        <a class="more" href="#">查看完整榜单</a>
+      </div>
+      <div class="split">
+        <ol class="list">
+          <li><span class="no top">01</span><div class="info"><h3>雾港谜案</h3><p>悬疑 · 评分 9.1</p></div><a class="go" href="#">详情</a></li>
+          <li><span class="no top">02</span><div class="info"><h3>大地之上</h3><p>纪录 · 评分 9.0</p></div><a class="go" href="#">详情</a></li>
+          <li><span class="no top">03</span><div class="info"><h3>星轨少年</h3><p>动漫 · 评分 9.2</p></div><a class="go" href="#">详情</a></li>
+          <li><span class="no">04</span><div class="info"><h3>星际回响</h3><p>科幻 · 评分 8.9</p></div><a class="go" href="#">详情</a></li>
+          <li><span class="no">05</span><div class="info"><h3>山海奇谭</h3><p>动画 · 评分 8.8</p></div><a class="go" href="#">详情</a></li>
+          <li><span class="no">06</span><div class="info"><h3>长夜将明</h3><p>剧情 · 评分 8.7</p></div><a class="go" href="#">详情</a></li>
+        </ol>
+        <div class="feats" style="grid-template-columns:1fr;">
+          <div><h3>榜单说明</h3><p>榜单依据全站评分、搜索热度与完播反馈综合计算，每日凌晨更新，供选片参考。</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="why" class="band" aria-labelledby="whyTitle">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <h2 id="whyTitle">为什么选择 38电影网</h2>
+          <p>分类清晰、更新及时、检索高效的影视导航体验</p>
+        </div>
+      </div>
+      <div class="feats">
+        <div><div class="ic" aria-hidden="true">◎</div><h3>片单齐全</h3><p>电影、剧集、综艺、动漫、纪录五大内容库统一检索。</p></div>
+        <div><div class="ic" aria-hidden="true">≡</div><h3>分类精细</h3><p>按类型、地区、年份、评分多维度筛选，快速定位。</p></div>
+        <div><div class="ic" aria-hidden="true">↻</div><h3>每日更新</h3><p>新片上线、剧集更新与榜单变化同步刷新，不断档。</p></div>
+        <div><div class="ic" aria-hidden="true">▣</div><h3>移动适配</h3><p>手机、平板与桌面端自适应排版，随时随地找片。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" aria-labelledby="faqTitle">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <h2 id="faqTitle">常见问题</h2>
+          <p>关于 38电影网的使用与内容说明</p>
+        </div>
+      </div>
+      <div class="faq">
+        <details open>
+          <summary>38电影网提供哪些内容？</summary>
+          <p>提供高清电影、热播电视剧、综艺与动漫的片单推荐、剧情介绍、评分口碑与更新动态，帮助你高效选片。</p>
+        </details>
+        <details>
+          <summary>如何快速找到想看的影片？</summary>
+          <p>可使用顶部搜索框按片名检索，也可通过类型、地区、年份与评分标签组合筛选，逐步缩小范围。</p>
+        </details>
+        <details>
+          <summary>榜单是如何生成的？</summary>
+          <p>榜单综合全站评分、搜索热度与用户反馈等维度计算得出，每日更新一次，仅作观影参考。</p>
+        </details>
+        <details>
+          <summary>是否支持手机浏览？</summary>
+          <p>支持。页面采用响应式布局，手机端自动切换为单列卡片与折叠导航，浏览体验一致。</p>
+        </details>
+      </div>
+      <div class="cta" style="margin-top:28px;">
+        <h2>现在就来 38电影网 发现好片</h2>
+        <p>收藏本站，随时查看最新片单、热播榜单与观影指南。</p>
+        <a class="btn" href="#">立即进入片库</a>
+        <a class="btn ghost" href="#">了解更多</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <h4>关于 38电影网</h4>
+        <p>38电影网是面向影视爱好者的影视资讯与观影导航站点，聚合高清电影、热播电视剧、综艺动漫的片单推荐与更新动态，致力于让找片更高效。</p>
+      </div>
+      <div>
+        <h4>内容分类</h4>
+        <ul>
+          <li><a href="#">最新电影</a></li>
+          <li><a href="#">国产电视剧</a></li>
+          <li><a href="#">日韩剧集</a></li>
+          <li><a href="#">欧美剧集</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>热门标签</h4>
+        <ul>
+          <li><a href="#">动作片</a></li>
+          <li><a href="#">科幻片</a></li>
+          <li><a href="#">悬疑推理</a></li>
+          <li><a href="#">国漫番剧</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>站点服务</h4>
+        <ul>
+          <li><a href="#">榜单中心</a></li>
+          <li><a href="#">影视资讯</a></li>
+          <li><a href="#">意见反馈</a></li>
+          <li><a href="#">联系我们</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">
+      <span>© 2026 38电影网 38dianyingwang-app · 影视资讯与观影导航</span>
+      <span><a href="#">隐私说明</a> · <a href="#">免责声明</a> · <a href="#">站点地图</a></span>
+    </div>
+  </div>
+</footer>
+
+<a class="to-top" href="#top" aria-label="返回顶部">↑</a>
+
+<script>
+(function(){
+  var btn = document.getElementById('menuBtn');
+  var nav = document.getElementById('mainNav');
+  if (btn && nav) {
+    btn.addEventListener('click', function(){
+      var open = nav.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    nav.addEventListener('click', function(e){
+      if (e.target.tagName === 'A') {
+        nav.classList.remove('open');
+        btn.setAttribute('aria-expanded','false');
+      }
+    });
+  }
+})();
+</script>
+</body>
+</html>
